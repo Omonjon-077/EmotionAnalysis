@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--================ DESCRIPTION | Omonjon ================-->
+    <meta name="description" content="Welcome to the Sejong website">
+
+    <!--================ FAVICON | Omonjon ================-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <!--============== BOX ICONS CSS 2.1.4v | Omonjon ==============-->
+    <link rel="stylesheet" href="assets/styles/boxicons.min.css">
+
+    <!--================ SWIPER CSS 8.1.1v | Omonjon ================-->
+    <link rel="stylesheet" href="assets/styles/swiper-bundle.min.css">
+
+    <!--================ BOXED-CHECK CSS 1.0.7v | Omonjon ================-->
+    <link rel="stylesheet" href="assets/styles/boxed-check.css">
+
+    <!--================ BOOTSTRAP CSS 5.3v | Omonjon ===============-->
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+
+    <!--================ STYLE CSS | Omonjon ================-->
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.9">
+    <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.8">
+
+    <title>Sejong</title>
+</head>
+<body>
+<!--================ LOADER | Omonjon ================-->
+<div class="load d-none" id="load">
+    <lottie-player autoplay loop mode="normal" src="assets/jsons/loader.json" class="load-gif">
+    </lottie-player>
+</div>
+
+<!--================ MENUS MODAL | Omonjon ================-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="container-sm container-fluid d-flex">
+                    <button type="button" class="btn-close box-shadow-none px-0" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="modal-body bg-dark pt-md-5 pt-sm-3 pt-3">
+                <div class="container-sm container-fluid">
+                    <div class="row row-gap-3">
+                        <div class="col-12">
+                            <div class="d-flex flex-column align-items-center row-gap-2">
+                                <h3 class="fs-5 text-white">Prizma Development</h3>
+                                <ul class="d-flex flex-column align-items-center row-gap-2">
+                                    <li><a class="text-white-50" href="#">Loyiha haqida</a></li>
+                                    <li><a class="text-white-50" href="#">Xususiyatlari</a></li>
+                                    <li><a class="text-white-50" href="#">Fotosuratlar</a></li>
+                                    <li><a class="text-white-50" href="#">Manzil</a></li>
+                                    <li><a class="text-white-50" href="#">Biz bilan bog’laning</a></li>
+                                    <li><a class="text-white-50" href="about.html">Kompaniya haqida</a></li>
+                                </ul>
+                                <div class="d-flex align-items-center column-gap-2">
+                                    <a href="#!" class=""><img alt="" src="assets/images/svg/facebook.svg"></a>
+                                    <a href="#!" class=""><img alt=""
+                                                               src="assets/images/svg/instagram.svg"></a>
+                                    <a href="#!" class="d-flex align-items-center justify-content-center"><i
+                                            class="bx bxl-telegram bx-sm text-gray"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==================== HEADER | Omonjon ====================-->
+<header class="header bg-gray">
+    <nav class="py-4" id="myHeader">
+        <div class="px-2 px-sm-3 px-md-4 px-lg-5">
+            <div class="d-flex align-items-center justify-content-between">
+                <a class="d-flex align-items-center site-logo" href="#"><img alt="LOGO" class="w-100"
+                                                                             src="assets/images/svg/site-logo.svg"></a>
+                <div class="d-flex align-items-center column-gap-3">
+                    <a href="#!" class="px-3 py-2 bg-primary text-white rounded-5 fw-bold fs-7">Sign up</a>
+                    <button type="button"
+                            class="outline-none border-none bg-transparent d-none align-items-center justify-content-center"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fs-3 text-primary bx bx-menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--================ MAIN | Omonjon ================-->
+<main>
+    <!--================ INTRO | Omonjon ================-->
+    <section class="py-5 bg-gray">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center flex-column">
+                <h5 class="display-1 fw-bold text-primary text-center">Unleash the Power of Emotion analysis</h5>
+                <p class="fs-5 fw-normal summary-color secondary-font text-center mt-2 mb-5" style="max-width: 835px;">
+                    Unlock the secrets hidden within your text and webcam. This is your gateway to a world where
+                    technology understands and deciphers human emotions like never before.
+                </p>
+                <h5 class="fw-bold text-primary fs-7 text-center mt-2" style="max-width: 365px;">Before getting started,
+                    which criteria is more important for you?</h5>
+                <form action="" class="d-flex flex-column align-items-center mt-3">
+                    <div class="d-flex align-items-center justify-content-center row-gap-3 column-gap-4 bg-white rounded-5 primary-shadow flex-wrap py-4 px-5">
+                        <div class="d-flex align-items-center justify-content-center flex-column">
+                            <input type="radio" required id="textInput">
+                            <label for="textInput" class="fs-7 fw-normal secondary-font summary-color">Text
+                                Input</label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center flex-column">
+                            <input type="radio" required id="solvingInput">
+                            <label for="solvingInput" class="fs-7 fw-normal secondary-font summary-color">Solving
+                                Test</label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center flex-column">
+                            <input type="radio" required id="webInput">
+                            <label for="webInput" class="fs-7 fw-normal secondary-font summary-color">Web camera</label>
+                        </div>
+                    </div>
+                    <button type="button"
+                            class="outline-none border-none bg-secondary py-3 px-4 mt-4 text-white fs-5 fw-bold rounded-5">
+                        Get started
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--================ APPLICATION | Omonjon ================-->
+    <section class="py-5 mb-sm-5">
+        <div class="container">
+            <h5 class="display-6 text-center text-lg-start fw-bold text-primary mb-3 mb-sm-4 mb-md-5"
+                style="max-width: 514px;">
+                How to use application for analysis
+            </h5>
+            <div class="row row-gap-4">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="d-flex flex-column row-gap-3">
+                        <div class="d-flex align-items-center justify-content-center justify-content-sm-start flex-wrap column-gap-2">
+                            <h6 class="rounded-circle bg-gray text-primary fw-6 fw-bold py-2 px-3">1</h6>
+                            <h5 class="fs-6 text-primary fw-bold">Start Analysis</h5>
+                        </div>
+                        <p class="secondary-font fs-7 text-center text-sm-start fw-normal summary-color">
+                            First, Sign in/up to start and continue the process.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="d-flex flex-column row-gap-3">
+                        <div class="d-flex align-items-center justify-content-center justify-content-sm-start flex-wrap column-gap-2">
+                            <h6 class="rounded-circle bg-gray text-primary fw-6 fw-bold py-2 px-3">2</h6>
+                            <h5 class="fs-6 text-primary fw-bold">State your emotion</h5>
+                        </div>
+                        <p class="secondary-font fs-7 text-center text-sm-start fw-normal summary-color">
+                            Before starting main course of analysis state your current emotion based on follow-up
+                            question.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="d-flex flex-column row-gap-3">
+                        <div class="d-flex align-items-center justify-content-center justify-content-sm-start flex-wrap column-gap-2">
+                            <h6 class="rounded-circle bg-gray text-primary fw-6 fw-bold py-2 px-3">3</h6>
+                            <h5 class="fs-6 text-primary fw-bold">Answer the questions</h5>
+                        </div>
+                        <p class="secondary-font fs-7 text-center text-sm-start fw-normal summary-color">
+                            While you are answering question related to your emotion state, application analyses your
+                            activity through camera.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="d-flex flex-column row-gap-3">
+                        <div class="d-flex align-items-center justify-content-center justify-content-sm-start flex-wrap column-gap-2">
+                            <h6 class="rounded-circle bg-gray text-primary fw-6 fw-bold py-2 px-3">4</h6>
+                            <h5 class="fs-6 text-primary fw-bold">Get the result</h5>
+                        </div>
+                        <p class="secondary-font fs-7 text-center text-sm-start fw-normal summary-color">
+                            You will get the result based on text you entered as well as test and camera activity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ TEAM | Omonjon ================-->
+    <section class="py-5 mb-md-5">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center">
+                <h5 class="fs-1 fw-bold text-primary text-center mb-3" style="max-width: 628px;">An incredible team
+                    building wonders, everyday.</h5>
+            </div>
+            <div class="row mt-3 mb-md-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex flex-column secondary-shadow align-items-center p-5 rounded-5">
+                        <div class="d-flex mb-2">
+                            <img src="assets/images/avatar-1.png" alt="Avatar">
+                        </div>
+                        <h6 class="fs-4 text-primary fw-bold mb-2 mt-3 text-center">Jamshidbek Nabijonov</h6>
+                        <p class="d-flex flex-column align-items-center secondary-font row-gap-1 fs-6 fw-normal summary-color">
+                            UI designer <span>Student</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex flex-column secondary-shadow align-items-center p-5 rounded-5">
+                        <div class="d-flex mb-2">
+                            <img src="assets/images/avatar-2.png" alt="Avatar">
+                        </div>
+                        <h6 class="fs-4 text-primary fw-bold mb-2 mt-3 text-center">Sarvarjon Sodikov</h6>
+                        <p class="d-flex flex-column align-items-center secondary-font row-gap-1 fs-6 fw-normal summary-color">
+                            Frontend developer <span>Student</span></p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="d-flex flex-column secondary-shadow align-items-center p-5 rounded-5">
+                        <div class="d-flex mb-2">
+                            <img src="assets/images/avatar-1.png" alt="Avatar">
+                        </div>
+                        <h6 class="fs-4 text-primary fw-bold mb-2 mt-3 text-center">Ivan Maksim</h6>
+                        <p class="d-flex flex-column align-items-center secondary-font row-gap-1 fs-6 fw-normal summary-color">
+                            Backend developer<span>Project leader</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--================ SCROLL UP | Omonjon ================-->
+<a href="#" class="scroll_up d-none" id="scroll-up">
+    <i class='bx bx-up-arrow-alt'></i>
+</a>
+
+<!--================ JQUERY JS 3.6.3v | Omonjon ================-->
+<script src="assets/script/jquery-3.6.3.js"></script>
+
+<!--================ LOTTIE JS | Omonjon ================-->
+<script src="assets/script/lottie-player.js"></script>
+
+<!--================ BOOTSTRAP JS 5.3.1v | Omonjon ================-->
+<script src="assets/script/bootstrap.bundle.min.js"></script>
+
+<!--================ SWIPER JS 8.1.1v | Omonjon ================-->
+<script src="assets/script/swiper-bundle.min.js"></script>
+
+<!--================ MAIN JS | Omonjon ================-->
+<script src="assets/script/main.js?v=0.0.7"></script>
+</body>
+</html>

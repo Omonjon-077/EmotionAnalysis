@@ -1,0 +1,51 @@
+@media (max-width: 767px) {
+    .scroll_up {
+        right: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .site-logo {
+        width: 130px;
+    }
+
+    .fs-44pxMb {
+        font-size: 44px !important;
+    }
+
+    .fw-boldMb {
+        font-weight: bold !important;
+    }
+
+    .fs-14pxMb {
+        font-size: 14px !important;
+    }
+
+    .fs-16pxMb {
+        font-size: 16px !important;
+    }
+
+    .fs-18pxMb {
+        font-size: 18px !important;
+    }
+
+    .fs-20pxMb {
+        font-size: 20px !important;
+    }
+
+    .fs-22pxMb {
+        font-size: 22px !important;
+    }
+
+    .fs-24pxMb {
+        font-size: 24px !important;
+    }
+
+    .footer-form {
+        width: 270px !important;
+    }
+
+    .w-100Mb {
+        width: 100% !important;
+    }
+}
