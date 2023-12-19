@@ -108,11 +108,11 @@
                         class="text-secondary">How was your preparation for final exam?</span>
                 </div>
                 <div class="col-lg-9 col-xl-8 col-xxl-7 mt-4">
-                    <form name="answerForm" action="./questions.html" onsubmit="return validateForm()" method="get"
+                    <form name="answerForm" action="./questions.html" onsubmit="return validateForm()" onchange="return changeForm()" method="get"
                           class="d-flex flex-column bg-white rounded-4 secondary-shadow pt-3 px-3 pb-4">
                         <label for="textareaAnswer" class="d-none"></label>
                         <textarea name="answerInput" style="resize: none;"
-                                  id="textareaAnswer" value=""
+                                  id="textareaAnswer"
                                   placeholder="Type your answer here..."
                                   class="bg-gray form-control text-black border-none outline-none rounded-4 p-3 secondary-font"
                                   rows="8"></textarea>
@@ -149,6 +149,6 @@
 <script src="../assets/script/swiper-bundle.min.js"></script>
 
 <!--================ MAIN JS | Omonjon ================-->
-<script src="../assets/script/main.js?v=0.0.1"></script>
+<script src="../assets/script/main.js?v=0.0.2"></script>
 </body>
 </html>

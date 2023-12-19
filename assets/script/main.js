@@ -66,3 +66,12 @@ function validateForm() {
         return false;
     }
 }
+
+function changeForm() {
+    let invalidInput = document.getElementById("textareaAnswer");
+    let x = document.forms["answerForm"]["textareaAnswer"].value;
+    if (x !== "") {
+        invalidInput.classList.remove("is-invalid");
+        return false;
+    }
+}
