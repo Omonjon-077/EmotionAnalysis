@@ -108,15 +108,22 @@
                         class="text-secondary">How was your preparation for final exam?</span>
                 </div>
                 <div class="col-lg-9 col-xl-8 col-xxl-7 mt-4">
-                    <form action="" class="d-flex flex-column bg-white rounded-4 secondary-shadow pt-3 px-3 pb-4">
+                    <form name="answerForm" action="questions.html" onsubmit="return validateForm()" method="post"
+                          class="d-flex flex-column bg-white rounded-4 secondary-shadow pt-3 px-3 pb-4">
                         <label for="textareaAnswer" class="d-none"></label>
-                        <textarea required style="resize: none;" id="textareaAnswer"
+                        <textarea name="answerInput" style="resize: none;"
+                                  id="textareaAnswer" value=""
                                   placeholder="Type your answer here..."
-                                  class="bg-gray text-black border-none outline-none rounded-4 p-3 secondary-font"
-                                  rows="8"></textarea>
+                                  class="bg-gray form-control text-black border-none outline-none rounded-4 p-3 secondary-font"
+                                  rows="8">
+                        </textarea>
+                        <div class="invalid-feedback">
+                            Please type your answer.
+                        </div>
                         <div class="d-flex align-items-center justify-content-center justify-content-sm-end flex-wrap row-gap-3 mt-4 column-gap-2 pe-lg-4">
-                            <a href="questions.html"
-                               class="border-0 outline-none py-2 px-3 text-white rounded-5 bg-primary me-sm-5">Enter & start the test</a>
+                            <input type="submit"
+                                   class="border-0 outline-none py-2 px-3 text-white rounded-5 bg-primary me-sm-5"
+                                   value="Enter & start the test">
                         </div>
                     </form>
                 </div>

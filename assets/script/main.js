@@ -7,7 +7,7 @@ window.addEventListener("load", function (eventObject) {
     $('.load').fadeOut("slow");
 });
 
-/*=============== Header Fixed ===============*/
+/*=============== HEADER FIXED ===============*/
 if ($("#myHeader").length) {
     window.onscroll = function () {
         myFunction()
@@ -26,25 +26,27 @@ if ($("#myHeader").length) {
 }
 
 /*=============== TIMER JS ===============*/
-function countdown() {
-    let seconds = 59;
-    function tick() {
-        let counter = document.getElementById("counter");
-        seconds--;
-        counter.innerHTML =
-            "0:" + (seconds < 10 ? "0" : "") + String(seconds);
-        if (seconds > 0) {
-            setTimeout(tick, 1000);
+if ($("#counter").length) {
+    function countdown() {
+        let seconds = 59;
+        function tick() {
+            let counter = document.getElementById("counter");
+            seconds--;
+            counter.innerHTML =
+                "0:" + (seconds < 10 ? "0" : "") + String(seconds);
+            if (seconds > 0) {
+                setTimeout(tick, 1000);
+            }
+            else if (seconds == 0) {
+                alert("You are out of time!!!");
+            } else {
+                document.getElementById("counter").innerHTML = "";
+            }
         }
-        else if (seconds == 0) {
-           alert("You are out of time!!!");
-        } else {
-            document.getElementById("counter").innerHTML = "";
-        }
+        tick();
     }
-    tick();
+    countdown();
 }
-countdown();
 
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
@@ -54,3 +56,13 @@ const scrollUp = () => {
         : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+/*=============== VALIDATION FIXED ===============*/
+function validateForm() {
+    let invalidInput = document.getElementById("textareaAnswer");
+    let x = document.forms["answerForm"]["textareaAnswer"].value;
+    if (x == "") {
+        invalidInput.classList.add("is-invalid");
+        return false;
+    }
+}
