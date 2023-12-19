@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--================ DESCRIPTION | Omonjon ================-->
+    <meta name="description" content="Welcome to the Sejong website">
+
+    <!--================ FAVICON | Omonjon ================-->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+
+    <!--============== BOX ICONS CSS 2.1.4v | Omonjon ==============-->
+    <link rel="stylesheet" href="../assets/styles/boxicons.min.css">
+
+    <!--================ SWIPER CSS 8.1.1v | Omonjon ================-->
+    <link rel="stylesheet" href="../assets/styles/swiper-bundle.min.css">
+
+    <!--================ BOXED-CHECK CSS 1.0.7v | Omonjon ================-->
+    <link rel="stylesheet" href="../assets/styles/boxed-check.css">
+
+    <!--================ BOOTSTRAP CSS 5.3v | Omonjon ===============-->
+    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css">
+
+    <!--================ STYLE CSS | Omonjon ================-->
+    <link rel="stylesheet" href="../assets/styles/main.css?v=0.0.2">
+    <link rel="stylesheet" href="../assets/styles/breakpoints.css?v=0.0.1">
+
+    <title>Sejong | Questions</title>
+</head>
+<body>
+<!--================ LOADER | Omonjon ================-->
+<div class="load d-none" id="load">
+    <lottie-player autoplay loop mode="normal" src="../assets/jsons/loader.json" class="load-gif">
+    </lottie-player>
+</div>
+
+<!--================ MENUS MODAL | Omonjon ================-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="container-sm container-fluid d-flex">
+                    <button type="button" class="btn-close box-shadow-none px-0" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="modal-body bg-dark pt-md-5 pt-sm-3 pt-3">
+                <div class="container-sm container-fluid">
+                    <div class="row row-gap-3">
+                        <div class="col-12">
+                            <div class="d-flex flex-column align-items-center row-gap-2">
+                                <h3 class="fs-5 text-white">Prizma Development</h3>
+                                <ul class="d-flex flex-column align-items-center row-gap-2">
+                                    <li><a class="text-white-50" href="#">Loyiha haqida</a></li>
+                                    <li><a class="text-white-50" href="#">Xususiyatlari</a></li>
+                                    <li><a class="text-white-50" href="#">Fotosuratlar</a></li>
+                                    <li><a class="text-white-50" href="#">Manzil</a></li>
+                                    <li><a class="text-white-50" href="#">Biz bilan bog’laning</a></li>
+                                    <li><a class="text-white-50" href="about.html">Kompaniya haqida</a></li>
+                                </ul>
+                                <div class="d-flex align-items-center column-gap-2">
+                                    <a href="#!" class=""><img alt="" src="../assets/images/svg/facebook.svg"></a>
+                                    <a href="#!" class=""><img alt=""
+                                                               src="../assets/images/svg/instagram.svg"></a>
+                                    <a href="#!" class="d-flex align-items-center justify-content-center"><i
+                                            class="bx bxl-telegram bx-sm text-gray"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==================== HEADER | Omonjon ====================-->
+<header class="header bg-gray">
+    <nav class="py-4" id="myHeader">
+        <div class="px-2 px-sm-3 px-md-4 px-lg-5">
+            <div class="d-flex align-items-center justify-content-between">
+                <a class="d-flex align-items-center site-logo" href="../index.html"><img alt="LOGO" class="w-100"
+                                                                                         src="../assets/images/svg/site-logo.svg"></a>
+                <div class="d-flex align-items-center column-gap-3">
+                    <a href="../index.html" class="px-3 py-2 bg-primary text-white rounded-5 fw-bold fs-7">Go back</a>
+                    <button type="button"
+                            class="outline-none border-none bg-transparent d-none align-items-center justify-content-center"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <i class="fs-3 text-primary bx bx-menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--================ MAIN | Omonjon ================-->
+<main>
+    <!--================ INTRO | Omonjon ================-->
+    <section class="py-5 bg-gray" style="min-height: 90vh">
+        <div class="container">
+            <div class="row row-gap-3 justify-content-center">
+                <h5 class="text-primary display-1 fw-bold mb-2 text-center">So, the results of analysis...</h5>
+                <div class="text-secondary fw-normal fs-5 secondary-font text-center mb-4 mb-sm-5">
+                    Based on answers we have collected from your emotion analysis is as below:
+                </div>
+                <h5 class="text-primary display-1 fw-bold mb-2 text-center d-flex align-items-center justify-content-center column-gap-3">
+                    <span style="color: #FF9090 !important;">75%</span>stressed</h5>
+                <div class="col-12 col-xxl-8 mt-4 mt-sm-5 mb-5">
+                    <div class="row">
+                        <div class="col-4 pe-0">
+                            <div class="d-flex flex-column align-items-center align-items-sm-start">
+                                <div class="bg-low h-60px w-100"></div>
+                                <h5 class="secondary-font text-primary fs-5 fw-normal mt-2 ms-2">Low</h5>
+                            </div>
+                        </div>
+                        <div class="col-4 px-0">
+                            <div class="d-flex flex-column align-items-center align-items-sm-start">
+                                <div class="bg-normal h-60px w-100"></div>
+                                <h5 class="secondary-font text-primary fs-5 fw-normal mt-2 ms-2">Normal</h5>
+                            </div>
+                        </div>
+                        <div class="col-4 ps-0">
+                            <div class="d-flex flex-column align-items-center align-items-sm-start">
+                                <div class="bg-high h-60px w-100"></div>
+                                <h5 class="secondary-font text-primary fs-5 fw-normal mt-2 ms-2">High</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--================ SCROLL UP | Omonjon ================-->
+<a href="#" class="scroll_up d-none" id="scroll-up">
+    <i class='bx bx-up-arrow-alt'></i>
+</a>
+
+<!--================ JQUERY JS 3.6.3v | Omonjon ================-->
+<script src="../assets/script/jquery-3.6.3.js"></script>
+
+<!--================ LOTTIE JS | Omonjon ================-->
+<script src="../assets/script/lottie-player.js"></script>
+
+<!--================ BOOTSTRAP JS 5.3.1v | Omonjon ================-->
+<script src="../assets/script/bootstrap.bundle.min.js"></script>
+
+<!--================ SWIPER JS 8.1.1v | Omonjon ================-->
+<script src="../assets/script/swiper-bundle.min.js"></script>
+
+<!--================ MAIN JS | Omonjon ================-->
+<script src="../assets/script/main.js?v=0.0.1"></script>
+</body>
+</html>

@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
 
     <!--================ STYLE CSS | Omonjon ================-->
-    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.1">
+    <link rel="stylesheet" href="assets/styles/main.css?v=0.0.2">
     <link rel="stylesheet" href="assets/styles/breakpoints.css?v=0.0.1">
 
     <title>Sejong</title>
@@ -84,7 +84,7 @@
                 <a class="d-flex align-items-center site-logo" href="#"><img alt="LOGO" class="w-100"
                                                                              src="assets/images/svg/site-logo.svg"></a>
                 <div class="d-flex align-items-center column-gap-3">
-                    <a href="#!" class="px-3 py-2 bg-primary text-white rounded-5 fw-bold fs-7">Sign up</a>
+                    <a href="pages/signUp.html" class="px-3 py-2 bg-primary text-white rounded-5 fw-bold fs-7">Sign up</a>
                     <button type="button"
                             class="outline-none border-none bg-transparent d-none align-items-center justify-content-center"
                             data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -101,12 +101,12 @@
     <!--================ INTRO | Omonjon ================-->
     <section class="py-5 bg-gray">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-center flex-column">
+            <div class="row align-items-center justify-content-center flex-column">
                 <h5 class="display-1 fw-bold text-primary text-center">Unleash the Power of Emotion analysis</h5>
-                <p class="fs-5 fw-normal summary-color secondary-font text-center mt-2 mb-5" style="max-width: 835px;">
+                <div class="col-xl-9 fs-5 fw-normal summary-color secondary-font text-center mt-2 mb-5">
                     Unlock the secrets hidden within your text and webcam. This is your gateway to a world where
                     technology understands and deciphers human emotions like never before.
-                </p>
+                </div>
                 <h5 class="fw-bold text-primary fs-7 text-center mt-2" style="max-width: 365px;">Before getting started,
                     which criteria is more important for you?</h5>
                 <form action="" class="d-flex flex-column align-items-center mt-3">
@@ -126,10 +126,10 @@
                             <label for="webInput" class="fs-7 fw-normal secondary-font summary-color">Web camera</label>
                         </div>
                     </div>
-                    <button type="button"
-                            class="outline-none border-none bg-secondary py-3 px-4 mt-4 text-white fs-5 fw-bold rounded-5">
+                    <a type="button" href="pages/analysis.html"
+                            class="bg-secondary py-3 px-4 mt-4 text-white fs-5 fw-bold rounded-5">
                         Get started
-                    </button>
+                    </a>
                 </form>
             </div>
         </div>

@@ -25,6 +25,27 @@ if ($("#myHeader").length) {
     }
 }
 
+/*=============== TIMER JS ===============*/
+function countdown() {
+    let seconds = 59;
+    function tick() {
+        let counter = document.getElementById("counter");
+        seconds--;
+        counter.innerHTML =
+            "0:" + (seconds < 10 ? "0" : "") + String(seconds);
+        if (seconds > 0) {
+            setTimeout(tick, 1000);
+        }
+        else if (seconds == 0) {
+           alert("You are out of time!!!");
+        } else {
+            document.getElementById("counter").innerHTML = "";
+        }
+    }
+    tick();
+}
+countdown();
+
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up')
